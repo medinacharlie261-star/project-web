@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../info.js"></script>
+    <script src="../script.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Chop Block-Inventory</title>
+</head>
+<body>
+    <div class="webinfo">
+        <div class="header">
+            <div class="logo-section">
+                <span style="font-size: 40px;">🔪</span>
+                <h1>Eloy's <br> Meat Shop</h1>
+            </div>
+            <nav>
+                <a href="../nav/login.html" class="nav-link">LOGIN</a>
+                <a href="https://www.facebook.com/" class="nav-link">CONTACT</a>
+                <a href="../nav/shop.html" class="nav-link">SHOP</a>
+                <a href="../medina.html" class="nav-link">BACK TO HOME</a>
+            </nav>
+        </div>
+
+        <div class="main-content">
+            <div class="form-container">
+                <h2>Enter Information</h2>
+                <div class="input-group">
+                    <input type="text" id="fName" placeholder="First Name">
+                    <input type="text" id="mName" placeholder="Middle Name">
+                    <input type="text" id="lName" placeholder="Last Name">
+                    <input type="number" id="age" placeholder="Quantity (kg)">
+                    <input type="email" id="email" placeholder="Email">
+                    <button onclick="saveData()" id="saveBtn">Save </button><br>
+                    
+    
+            </div>
+    </div>
+
+            <div class="table-container">
+                <h2>Saved Persons Data</h2>
+                <table id="dataTable">
+                    <thead>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Middle Name</th>
+                            <th>Last Name</th>
+                            <th>KG</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        </tbody>
+                </table>
+            </div>
+        </div>
+     </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
